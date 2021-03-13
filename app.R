@@ -1,12 +1,3 @@
-counties <- readRDS("CensusApp/data/counties.rds")
-head(counties)
-install.packages(c("maps", "mapproj"))
-library(maps)
-library(mapproj)
-source("CensusApp/helpers.R")
-counties <- readRDS("CensusApp/data/counties.rds")
-percent_map(counties$white, "darkgreen", "% White")
-
 library(shiny)
 source("helpers.R")
 counties <- readRDS("data/counties.rds")
